@@ -2,6 +2,7 @@
 <html>
 <head>
     <title><?php echo isset($pageTitle) ? $pageTitle : 'Webseite'; ?></title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>

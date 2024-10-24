@@ -1,8 +1,8 @@
 /* Einfache CSS-Stylesheet - styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif !important;
+    background-color: #02ff24 !important;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -10,74 +10,88 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #7508b4;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
+    border-bottom: 5px solid #ffa500;
 }
 
 h1 {
-    color: #333;
+    color: #ff1493;
     text-align: center;
     margin-top: 20px;
+    font-size: 2.5em;
 }
 
 p {
     text-align: center;
+    color: #0000ff;
+    font-size: 1.2em;
 }
 
 a {
-    color: #4CAF50;
+    color: #ff4500;
     text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ff1493;
 }
 
 form {
-    background: white;
+    background: #ffffff;
     max-width: 400px;
     margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+    border: 3px solid #ff1493;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ffa500;
+    border-radius: 8px;
+    background-color: #ffebcd;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #ff4500;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 15px;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #ff6347;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    border-top: 5px solid #ffa500;
 }
 
 a[href="logout.php"] {
@@ -85,4 +99,33 @@ a[href="logout.php"] {
     margin-top: 20px;
     color: #ff0000;
     text-align: center;
+    font-size: 1.1em;
+}
+
+.success-message {
+    color: #008000;
+    background-color: #d0f0c0;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #008000;
+}
+
+.error-message {
+    color: #ff0000;
+    background-color: #ffcccc;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #ff0000;
+}
+
+header, footer, button, .success-message, .error-message {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
