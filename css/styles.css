@@ -1,131 +1,180 @@
-/* Einfache CSS-Stylesheet - styles.css */
-
+/* Allgemeines Styling des Body-Tags, das die gesamte Seite betrifft */
 body {
-    font-family: Arial, sans-serif !important;
-    background-color: #02ff24 !important;
-    color: #333;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Setzt die Schriftart der gesamten Seite auf 'Roboto', eine moderne serifenlose Schrift */
+    background-color: #f8f9fa; /* Setzt den Hintergrund auf ein helles Grau für eine neutrale Optik */
+    color: #333; /* Standardtextfarbe auf ein dunkles Grau gesetzt */
+    line-height: 1.6; /* Erhöht den Zeilenabstand, um die Lesbarkeit zu verbessern */
+    margin: 0; /* Entfernt die Standard-Ränder des Browsers */
+    padding: 0; /* Entfernt die Standard-Abstände des Browsers */
 }
 
+/* Styling des Headers, um ihn hervorzuheben */
 header {
-    background-color: #7508b4;
-    color: white;
-    padding: 20px 0;
+    width: 100%; /* Setzt die Breite des Headers auf die gesamte Breite des Viewports */
+    height: 50vh; /* Setzt die Höhe des Headers auf 50% der Höhe des Browserfensters */
+    overflow: hidden; /* Verhindert das Überlaufen des Inhalts */
+    position: relative;
     text-align: center;
-    font-size: 2em;
-    border-bottom: 5px solid #ffa500;
+}
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
-    color: #ff1493;
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     font-size: 2.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
+
+
+/* Hauptüberschrift (h1) auf der Seite */
+h1 {
+    color: #4CAF50; /* Setzt die Farbe der Überschrift auf Grün, um sie mit dem Header abzustimmen */
+    text-align: center; /* Zentriert die Hauptüberschrift */
+    margin-top: 20px; /* Fügt oben 20px Abstand hinzu */
+    font-size: 2.5em; /* Erhöht die Schriftgröße der Hauptüberschrift */
+}
+
+/* Absatztext (p) auf der Seite */
 p {
-    text-align: center;
-    color: #0000ff;
-    font-size: 1.2em;
+    text-align: center; /* Zentriert den Text der Absätze */
+    color: #555; /* Setzt die Textfarbe auf ein mittleres Grau für bessere Lesbarkeit */
+    font-size: 1.2em; /* Erhöht die Schriftgröße für besseren Lesekomfort */
+    margin: 10px 20px; /* Fügt Abstand um die Absätze hinzu */
 }
 
+/* Styling für Links */
 a {
-    color: #ff4500;
-    text-decoration: none;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    margin: 10px auto;
+    color: #007BFF; /* Setzt die Linkfarbe auf Blau */
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung der Links */
+    font-weight: bold; /* Macht den Text der Links fett, um sie hervorzuheben */
+    display: inline-block; /* Ermöglicht die Definition von margin und padding */
+    text-align: center; /* Zentriert den Linktext */
+    margin: 10px; /* Fügt um die Links herum Abstand hinzu */
+    padding: 10px 20px; /* Fügt Polsterung innerhalb der Links hinzu, um sie als Buttons wirken zu lassen */
+    background-color: #f0f0f0; /* Setzt die Hintergrundfarbe der Links auf ein helles Grau */
+    border-radius: 5px; /* Fügt abgerundete Ecken hinzu, um den Link wie einen Button aussehen zu lassen */
+    transition: background-color 0.3s ease; /* Fügt eine sanfte Farbänderungs-Animation beim Hover hinzu */
 }
 
+/* Hover-Effekt für Links */
 a:hover {
-    text-decoration: underline;
-    color: #ff1493;
+    text-decoration: underline; /* Unterstreicht den Link, wenn die Maus darüber ist */
+    background-color: #e0e0e0; /* Ändert die Hintergrundfarbe beim Hover auf ein etwas dunkleres Grau */
+    color: #0056b3; /* Setzt die Textfarbe beim Hover auf ein dunkleres Blau */
 }
 
+/* Styling für Formulare */
 form {
-    background: #ffffff;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
-    border: 3px solid #ff1493;
+    background: #ffffff; /* Setzt den Formular-Hintergrund auf Weiß */
+    max-width: 400px; /* Beschränkt die Breite des Formulars auf 400px */
+    margin: 40px auto; /* Zentriert das Formular und fügt oben und unten 40px Abstand hinzu */
+    padding: 30px; /* Fügt dem Formular innen 30px Polsterung hinzu */
+    border-radius: 10px; /* Fügt abgerundete Ecken zum Formular hinzu */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Fügt einen sanften Schatten hinzu, um das Formular hervorzuheben */
+    border: 1px solid #ddd; /* Setzt einen hellgrauen Rahmen um das Formular */
 }
 
+/* Styling für Eingabefelder im Formular */
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 20px);
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 2px solid #ffa500;
-    border-radius: 8px;
-    background-color: #ffebcd;
+    width: calc(100% - 20px); /* Setzt die Breite der Eingabefelder mit Platz für den Rand */
+    padding: 15px; /* Fügt Polsterung innerhalb der Eingabefelder hinzu */
+    margin-bottom: 15px; /* Fügt unten einen Abstand von 15px hinzu */
+    border: 1px solid #ccc; /* Setzt einen hellgrauen Rahmen um die Eingabefelder */
+    border-radius: 5px; /* Fügt abgerundete Ecken hinzu */
+    background-color: #f9f9f9; /* Setzt die Hintergrundfarbe der Eingabefelder auf ein sehr helles Grau */
 }
 
+/* Styling für den Button im Formular */
 button {
-    background-color: #ff4500;
-    color: white;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    background-color: #4CAF50; /* Setzt die Hintergrundfarbe des Buttons auf Grün */
+    color: white; /* Setzt die Schriftfarbe des Buttons auf Weiß */
+    border: none; /* Entfernt jegliche Rahmen um den Button */
+    padding: 15px; /* Fügt Polsterung innerhalb des Buttons hinzu */
+    width: 100%; /* Setzt die Breite des Buttons auf 100% des Containers */
+    border-radius: 5px; /* Fügt abgerundete Ecken zum Button hinzu */
+    cursor: pointer; /* Setzt den Cursor zu einer Hand, wenn er über dem Button ist */
+    font-size: 1.2em; /* Erhöht die Schriftgröße des Button-Textes */
+    font-weight: bold; /* Setzt den Text im Button fett */
+    transition: background-color 0.3s ease; /* Fügt eine sanfte Farbänderungs-Animation beim Hover hinzu */
 }
 
+/* Hover-Effekt für den Button */
 button:hover {
-    background-color: #ff6347;
+    background-color: #45a049; /* Ändert die Hintergrundfarbe des Buttons beim Hover auf ein dunkleres Grün */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    border-top: 5px solid #ffa500;
+    background-color: #4bda09; /* Setzt die Hintergrundfarbe des Footers auf dunkles Grau */
+    color: white; /* Setzt die Schriftfarbe im Footer auf weiß */
+    text-align: center; /* Zentriert den Text im Footer */
+    padding: 20px; /* Fügt eine Polsterung von 20px hinzu */
+    border-top: 5px solid #388E3C; /* Fügt eine grüne Linie oberhalb des Footers hinzu */
 }
 
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); /* Vergrößert das Icon leicht, wenn die Maus darüber ist */
+}
+
+}
+
+/* Styling für den Logout-Link */
 a[href="logout.php"] {
-    display: block;
-    margin-top: 20px;
-    color: #ff0000;
-    text-align: center;
-    font-size: 1.1em;
+    display: inline-block; /* Ermöglicht die Definition von margin und padding */
+    margin-top: 20px; /* Fügt oben Abstand hinzu */
+    color: #ff0000; /* Setzt die Farbe des Logout-Links auf Rot */
+    text-align: center; /* Zentriert den Linktext */
+    font-size: 1.1em; /* Erhöht die Schriftgröße des Logout-Links leicht */
+    padding: 10px; /* Fügt Polsterung hinzu, um den Link hervorzuheben */
 }
 
+/* Styling für Erfolgsmeldungen */
 .success-message {
-    color: #008000;
-    background-color: #d0f0c0;
-    padding: 15px;
-    margin: 20px auto;
-    max-width: 400px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #008000;
+    color: #155724; /* Setzt die Textfarbe auf ein dunkles Grün */
+    background-color: #d4edda; /* Setzt die Hintergrundfarbe auf ein helles Grün */
+    padding: 15px; /* Fügt innen eine Polsterung hinzu */
+    margin: 20px auto; /* Zentriert die Nachricht und fügt Abstand hinzu */
+    max-width: 400px; /* Begrenzung der maximalen Breite auf 400px */
+    border-radius: 8px; /* Fügt abgerundete Ecken hinzu */
+    text-align: center; /* Zentriert den Text der Nachricht */
+    font-weight: bold; /* Setzt die Schrift fett */
+    border: 1px solid #c3e6cb; /* Setzt einen hellgrünen Rahmen um die Nachricht */
 }
 
+/* Styling für Fehlermeldungen */
 .error-message {
-    color: #ff0000;
-    background-color: #ffcccc;
-    padding: 15px;
-    margin: 20px auto;
-    max-width: 400px;
-    border-radius: 8px;
-    text-align: center;
-    font-weight: bold;
-    border: 2px solid #ff0000;
-}
-
-header, footer, button, .success-message, .error-message {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-}
+    color: #721c24; /* Setzt die Textfarbe auf ein dunkles Rot */
+    background-color: #f8d7da; /* Setzt die Hintergrundfarbe auf ein helles Rot */
+    padding: 15px; /* Fügt innen eine Polsterung hinzu */
+    margin: 20px auto; /* Zentriert die Nachricht und fügt Abstand hinzu */
+    max-width: 400px; /* Begrenzung der maximalen Breite auf 400px */
