@@ -42,6 +42,8 @@
 
     <a href="index.php">Zurück zur Startseite</a> <!-- Link, um zur Startseite zurückzukehren -->
 
-    <?php require_once(__DIR__ . '/css/footer.php'); ?> <!-- Lädt den Footer der Seite, um eine einheitliche Fußzeile zu gewährleisten -->
+    <div class="footer-spacing"></div> <!-- Abstandshalter, um Platz zwischen dem Body und dem Footer zu schaffen -->
+
+<?php require_once(__DIR__ . '/css/footer.php'); ?> <!-- Lädt den Footer der Seite, um eine einheitliche Fußzeile zu gewährleisten -->
 </body>
 </html>

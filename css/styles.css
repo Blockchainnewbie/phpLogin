@@ -1,7 +1,7 @@
 /* Allgemeines Styling des Body-Tags, das die gesamte Seite betrifft */
 body {
     font-family: 'Roboto', sans-serif; /* Setzt die Schriftart der gesamten Seite auf 'Roboto', eine moderne serifenlose Schrift */
-    background-color: #f8f9fa; /* Setzt den Hintergrund auf ein helles Grau für eine neutrale Optik */
+    background-color: #befda1; /* Setzt den Hintergrund auf ein helles Grün für eine frische Optik */
     color: #333; /* Standardtextfarbe auf ein dunkles Grau gesetzt */
     line-height: 1.6; /* Erhöht den Zeilenabstand, um die Lesbarkeit zu verbessern */
     margin: 0; /* Entfernt die Standard-Ränder des Browsers */
@@ -9,35 +9,78 @@ body {
 }
 
 /* Styling des Headers, um ihn hervorzuheben */
+/* Styling des Headers, damit das Bild und der Text korrekt angezeigt werden */
 header {
     width: 100%; /* Setzt die Breite des Headers auf die gesamte Breite des Viewports */
     height: 50vh; /* Setzt die Höhe des Headers auf 50% der Höhe des Browserfensters */
     overflow: hidden; /* Verhindert das Überlaufen des Inhalts */
-    position: relative;
-    text-align: center;
+    position: relative; /* Stellt sicher, dass die Kind-Elemente relativ zum Header positioniert werden */
+    border-bottom: 5px solid #388E3C; /* Fügt eine grüne Linie unter dem Header hinzu */
 }
 
 .header-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Setzt die Breite des Containers auf 100% des Viewports */
+    height: 100%; /* Setzt die Höhe des Containers auf 100% des Headers */
+    position: relative; /* Ermöglicht eine relative Positionierung der Kinder-Elemente */
 }
 
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+.header-image {
+    width: 100%; /* Das Bild nimmt die gesamte Breite des Headers ein */
+    height: 100%; /* Das Bild nimmt die gesamte Höhe des Headers ein */
+    object-fit: cover; /* Das Bild passt sich an, um den gesamten Header auszufüllen */
 }
+
+.header-text {
+    position: absolute; /* Stellt sicher, dass der Text über dem Bild liegt */
+    top: 50%; /* Positioniert die Überschrift vertikal in der Mitte des Headers */
+    left: 50%; /* Positioniert die Überschrift horizontal in der Mitte des Headers */
+    transform: translate(-50%, -50%); /* Zentriert die Überschrift exakt in der Mitte */
+    text-align: center;
+    color: white; /* Setzt die Schriftfarbe auf weiß, um den Text sichtbar zu machen */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Fügt einen leichten Schatten hinzu, um den Text besser lesbar zu machen */
+    font-size: 2.5em; /* Setzt die Schriftgröße */
+    padding: 10px; /* Fügt eine kleine Polsterung hinzu, um die Lesbarkeit zu verbessern */
+}
+
+.club-info {
+    max-width: 800px; /* Begrenzung der Breite des Containers */
+    margin: 0 auto; /* Zentriert den Container horizontal */
+    text-align: center; /* Zentriert den gesamten Text im Container */
+    padding: 20px; /* Fügt etwas Innenabstand hinzu, um Luft zum Rand zu schaffen */
+}
+
+.club-info ul {
+    list-style: none; /* Entfernt die Standard-Aufzählungszeichen der Liste */
+    padding-left: 0; /* Entfernt den linken Innenabstand, um die Liste besser zentrieren zu können */
+    display: inline-block; /* Macht die Liste zum Block, damit sie innerhalb des Containers zentriert werden kann */
+    margin: 10px auto; /* Zentriert die Liste und fügt oben und unten einen kleinen Abstand hinzu */
+}
+
+.club-info li {
+    margin: 10px 0; /* Fügt etwas Abstand zwischen den Listenelementen hinzu */
+    position: relative; /* Ermöglicht das Hinzufügen von Symbolen vor den Listenelementen */
+}
+
+.club-info li::before {
+    content: "✔"; /* Fügt ein Häkchen-Symbol vor jedem Listenelement hinzu */
+    position: absolute; /* Positioniert das Häkchen relativ zum Listenelement */
+    left: -25px; /* Positioniert das Häkchen links vom Listenelement-Text, 25px entfernt */
+    color: #4CAF50; /* Setzt die Farbe des Symbols auf Grün */
+}
+
 
 
 
 /* Hauptüberschrift (h1) auf der Seite */
 h1 {
-    color: #4CAF50; /* Setzt die Farbe der Überschrift auf Grün, um sie mit dem Header abzustimmen */
+    color: #dbffdc; /* Setzt die Farbe der Überschrift auf Grün, um sie mit dem Header abzustimmen */
+    text-align: center; /* Zentriert die Hauptüberschrift */
+    margin-top: 20px; /* Fügt oben 20px Abstand hinzu */
+    font-size: 2.5em; /* Erhöht die Schriftgröße der Hauptüberschrift */
+}
+
+h2 {
+    color: #007447; /* Setzt die Farbe der Überschrift auf Grün, um sie mit dem Header abzustimmen */
     text-align: center; /* Zentriert die Hauptüberschrift */
     margin-top: 20px; /* Fügt oben 20px Abstand hinzu */
     font-size: 2.5em; /* Erhöht die Schriftgröße der Hauptüberschrift */
@@ -111,25 +154,35 @@ button {
 
 /* Hover-Effekt für den Button */
 button:hover {
-    background-color: #45a049; /* Ändert die Hintergrundfarbe des Buttons beim Hover auf ein dunkleres Grün */
+    background-color: #287a2c; /* Ändert die Hintergrundfarbe des Buttons beim Hover auf ein dunkleres Grün */
 }
 
+.footer-spacing {
+    height: 50px; /* Fügt einen festen Abstand von 50px zwischen dem Body und dem Footer hinzu */
+}
+
+/* Footer */
+
 footer {
-    background-color: #4bda09; /* Setzt die Hintergrundfarbe des Footers auf dunkles Grau */
-    color: white; /* Setzt die Schriftfarbe im Footer auf weiß */
-    text-align: center; /* Zentriert den Text im Footer */
-    padding: 20px; /* Fügt eine Polsterung von 20px hinzu */
+    margin-top: 20px; /* Fügt etwas Abstand oben hinzu, um den Footer vom Rest des Inhalts zu trennen */
     border-top: 5px solid #388E3C; /* Fügt eine grüne Linie oberhalb des Footers hinzu */
+    background-color: #388E3C; /* Setzt eine Hintergrundfarbe für den Footer */
+    color: #ffffff; /* Setzt die Textfarbe auf weiß, damit sie auf der grünen Hintergrundfarbe lesbar ist */
+    padding: 20px; /* Fügt etwas Polsterung innerhalb des Footers hinzu */
 }
 
 .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Begrenzung der Breite des Inhalts im Footer */
+    margin: 0 auto; /* Zentriert den Inhalt des Footers horizontal */
 }
 
+
 .social-media {
-    margin-top: 10px;
+    display: flex; /* Flexbox verwenden, um die Links auszurichten */
+    justify-content: center; /* Zentriert die Links horizontal */
+    margin-top: 10px; /* Fügt oben einen kleinen Abstand hinzu */
 }
+
 
 .social-media a {
     margin: 0 10px;
@@ -137,16 +190,35 @@ footer {
 }
 
 .social-media img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+    width: 30px; /* Setzt die Breite der Social-Media-Icons auf 30px */
+    height: 30px; /* Setzt die Höhe der Social-Media-Icons auf 30px */
+    transition: transform 0.3s ease; /* Fügt eine sanfte Skalierungsanimation beim Hover hinzu */
 }
 
 .social-media img:hover {
-    transform: scale(1.1); /* Vergrößert das Icon leicht, wenn die Maus darüber ist */
+    transform: scale(1.1); /* Vergrößert das Social-Media-Icon leicht, wenn die Maus darüber ist */
 }
 
+.cta-buttons {
+    display: flex; /* Verwendet Flexbox, um die Call-To-Action-Buttons auszurichten */
+    justify-content: center; /* Zentriert die Buttons horizontal im Container */
+    gap: 20px; /* Fügt einen Abstand von 20px zwischen den Buttons hinzu */
+    margin-top: 30px; /* Fügt oben 30px Abstand hinzu, um Luft zum restlichen Inhalt zu schaffen */
 }
+
+.cta-buttons a {
+    padding: 10px 20px; /* Fügt Innenabstände hinzu, um die Buttons wie echte Schaltflächen wirken zu lassen */
+    background-color: #4CAF50; /* Setzt die Hintergrundfarbe auf Grün */
+    color: white; /* Setzt die Textfarbe auf Weiß, damit sie gut sichtbar ist */
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung für Links */
+    border-radius: 5px; /* Fügt abgerundete Ecken hinzu, um die Buttons optisch hervorzuheben */
+    transition: background-color 0.3s ease; /* Fügt eine sanfte Hintergrundfarbänderung beim Hover hinzu */
+}
+
+.cta-buttons a:hover {
+    background-color: #45a049; /* Ändert die Hintergrundfarbe beim Hover auf ein etwas dunkleres Grün */
+}
+
 
 /* Styling für den Logout-Link */
 a[href="logout.php"] {
@@ -178,3 +250,4 @@ a[href="logout.php"] {
     padding: 15px; /* Fügt innen eine Polsterung hinzu */
     margin: 20px auto; /* Zentriert die Nachricht und fügt Abstand hinzu */
     max-width: 400px; /* Begrenzung der maximalen Breite auf 400px */
+}

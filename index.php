@@ -10,17 +10,20 @@
     <?php require_once(__DIR__ . '/css/header.php'); ?> <!-- Lädt den Header der Seite, um eine einheitliche Kopfzeile zu gewährleisten -->
 
     <div class="container">
-        <h1>Werde Mitglied in unserem Club!!!!</h1> <!-- Hauptüberschrift der Seite, die die Besucher zum Mitmachen animiert -->
-        <p>Der Cannameleon Cannabis Club ist eine Community, die sich für den sicheren und verantwortungsvollen Anbau und Austausch von Cannabis engagiert. Werde Teil unseres Netzwerks und profitiere von den gemeinsamen Erfahrungen und unserem Wissen über den Anbau.</p>
+        <h2>Werde Mitglied in unserem Club!!!!</h2> <!-- Hauptüberschrift der Seite, die die Besucher zum Mitmachen animiert -->
+        <p>Der Cannameleon Cannabis Club ist eine Community, die sich für den sicheren und <br>
+        verantwortungsvollen Anbau und Austausch von Cannabis engagiert. Werde Teil unseres <br>
+        Netzwerks und profitiere von den gemeinsamen Erfahrungen und unserem Wissen über den Anbau.</p>
 
         <div class="club-info">
             <h2>Über den Cannameleon Cannabis Club</h2>
             <p>Unser Club bietet Mitgliedern die Möglichkeit, in einer geschlossenen Gemeinschaft Cannabis anzubauen und sich über die besten Anbaumethoden auszutauschen. Wir fördern den verantwortungsbewussten Umgang mit Cannabis und setzen uns dafür ein, dass unsere Mitglieder Zugang zu hochwertigen Informationen und Ressourcen haben.</p>
-            <p>Als Mitglied hast du die Möglichkeit:</p>
+            <h3>Als Mitglied hast du die Möglichkeit:</h3>
             <ul>
                 <li>Anbau-Tipps und Erfahrungen mit anderen zu teilen.</li>
                 <li>Exklusive Events und Treffen zu besuchen.</li>
-                <li>Teil unserer einzigartigen Community zu sein, die Wissen und Samen austauscht.</li>
+                <li>Teil unserer einzigartigen Community zu sein,<br>
+                 die Wissen und Samen austauscht.</li>
             </ul>
         </div>
 
@@ -29,6 +32,8 @@
             <a href="login.php">Anmelden</a> <!-- Link zur Login-Seite -->
         </div>
     </div>
+
+    <div class="footer-spacing"></div> <!-- Abstandshalter, um Platz zwischen dem Body und dem Footer zu schaffen -->
 
     <?php require_once(__DIR__ . '/css/footer.php'); ?> <!-- Lädt den Footer der Seite, um eine einheitliche Fußzeile zu gewährleisten -->
 </body>
