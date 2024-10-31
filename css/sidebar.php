@@ -9,7 +9,7 @@ $visits++;
 file_put_contents($counterFile, $visits);
 ?>
 
-<div class="col-md-3">
+<div class="col-md-4">
     <!-- About Us Card -->
     <div class="card mb-4">
         <div class="card-header bg-success text-white">
