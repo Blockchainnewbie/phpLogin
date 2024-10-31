@@ -59,7 +59,7 @@
     <div class="container-fluid">
         <div class="row">
             <?php require_once(__DIR__ . '/css/sidebar.php'); ?>
-            <div class="col-md-8">
+            <div class="col-md-9">
         <!-- Bootstrap Carousel -->
         <div id="imageCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
