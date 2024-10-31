@@ -58,6 +58,7 @@
 
     <div class="container">
         <div class="row">
+            <?php require_once(__DIR__ . '/css/sidebar.php'); ?>
             <div class="col-md-9">
         <!-- Bootstrap Carousel -->
         <div id="imageCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
@@ -142,7 +143,6 @@
         </div>
     </div>
             </div>
-            <?php require_once(__DIR__ . '/css/sidebar.php'); ?>
         </div>
     </div>
 

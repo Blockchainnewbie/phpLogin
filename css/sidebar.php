@@ -10,6 +10,16 @@ file_put_contents($counterFile, $visits);
 ?>
 
 <div class="col-md-3">
+    <!-- About Us Card -->
+    <div class="card mb-4">
+        <div class="card-header bg-success text-white">
+            Über Uns
+        </div>
+        <div class="card-body">
+            <img src="img/alpaGang01.png" class="img-fluid mb-3" alt="Über Uns">
+            <p class="mb-0">Willkommen beim Cannameleon Cannabis Club! Wir sind eine engagierte Gemeinschaft von Cannabis-Enthusiasten, die sich für einen verantwortungsvollen Umgang einsetzen.</p>
+        </div>
+    </div>
     <div class="sidebar">
         <!-- Besucherzähler -->
         <div class="card mb-4">
