@@ -120,19 +120,19 @@
                 <form id="contactForm" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">E-Mail</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="mb-3">
                         <label for="betreff" class="form-label">Betreff</label>
-                        <input type="text" class="form-control" id="betreff" required>
+                        <input type="text" class="form-control" id="betreff" name="betreff" required>
                     </div>
                     <div class="mb-3">
                         <label for="nachricht" class="form-label">Nachricht</label>
-                        <textarea class="form-control" id="nachricht" rows="5" required></textarea>
+                        <textarea class="form-control" id="nachricht" name="nachricht" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-success w-100">Nachricht senden</button>
                 </form>
@@ -157,7 +157,11 @@
             document.getElementById('contactForm').addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                const formData = new FormData(this);
+                const formData = new FormData();
+                formData.append('name', document.getElementById('name').value);
+                formData.append('email', document.getElementById('email').value);
+                formData.append('betreff', document.getElementById('betreff').value);
+                formData.append('nachricht', document.getElementById('nachricht').value);
                 
                 fetch('process_contact.php', {
                     method: 'POST',
