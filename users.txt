@@ -1,2 +1,4 @@
 acbkfg6xl@mozmail.com|$2y$10$s4D9tNyfcjKjEu47btT1Wuby7fOD9Bn5JL3fQr1OA/EozBk3/ePri|Sonny|Ram
 hansi@meier.de|$2y$10$IDzTBt/eBorLCUcAricgHeIXkY5VL7nHWtkYTpsasmDNG2/eLbHL2|Hansi|Meier
+haberland-m-d@outlook.com|$2y$10$EoScGgo270ZWBG8TJL6nWO4F3b610msAsvyRn/Jvc9H1g129bsFDK|Marc-Dennis|Haberland
+roy@faust.de|$2y$10$eOTt68haHkLChxDXXwE57epffesREKm9Q1ovLaV01.GPzmxK6wk1u|Roy|Faust
