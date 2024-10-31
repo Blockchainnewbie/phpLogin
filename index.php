@@ -12,7 +12,7 @@
 
     <div class="container">
         <!-- Bootstrap Carousel -->
-        <div id="imageCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div id="imageCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
@@ -72,5 +72,13 @@
     
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var myCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
+                interval: 3000,
+                wrap: true
+            });
+        });
+    </script>
 </body>
 </html>
