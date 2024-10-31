@@ -1,6 +1,9 @@
 <footer>
     <div class="footer-content">
         <p>&copy; <?php echo date('Y'); ?> Cannameleon Cannabis Club. Alle Rechte vorbehalten.</p> <!-- Copyright-Text mit dem aktuellen Jahr -->
+        <div class="footer-links">
+            <a href="impressum.php">Impressum</a> | <a href="dsgvo.php">Datenschutz</a>
+        </div>
         <p>Folge uns auf:</p>
         <div class="social-media">
             <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Facebook"></a> <!-- Facebook-Link mit Icon -->
