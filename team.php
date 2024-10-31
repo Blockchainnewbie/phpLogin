@@ -36,9 +36,9 @@
                             Mitgliedschaft
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Vorteile</a></li>
-                            <li><a class="dropdown-item" href="#">Beiträge</a></li>
-                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                            <li><a class="dropdown-item" href="vorteile.php">Vorteile</a></li>
+                            <li><a class="dropdown-item" href="beitraege.php">Beiträge</a></li>
+                            <li><a class="dropdown-item" href="faq.php">FAQ</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -46,9 +46,9 @@
                             Ressourcen
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Anbau-Guide</a></li>
-                            <li><a class="dropdown-item" href="#">Rechtliches</a></li>
-                            <li><a class="dropdown-item" href="#">Downloads</a></li>
+                            <li><a class="dropdown-item" href="anbau-guide.php">Anbau-Guide</a></li>
+                            <li><a class="dropdown-item" href="rechtliches.php">Rechtliches</a></li>
+                            <li><a class="dropdown-item" href="downloads.php">Downloads</a></li>
                         </ul>
                     </li>
                 </ul>
