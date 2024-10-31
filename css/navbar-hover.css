@@ -1,6 +1,14 @@
+/* Globale Styles */
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: #2e5a1c;
+    margin-bottom: 1.5rem;
+}
+
 /* Navbar Grundstil */
 .navbar-custom {
-    background-color: #90EE90;  /* Helles Grün */
+    background-color: #90EE90;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .navbar-custom .navbar-nav {
@@ -42,15 +50,40 @@
 }
 
 .btn-success {
-    background-color: #90EE90;
-    border-color: #90EE90;
-    color: #333;
+    background-color: #4CAF50;
+    border-color: #45a049;
+    color: white;
 }
 
 .btn-success:hover {
-    background-color: #006400;
-    border-color: #006400;
+    background-color: #45a049;
+    border-color: #39843d;
     color: white;
+}
+
+/* Container Styles */
+.content-section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.container-fluid {
+    padding: 2rem;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.card {
+    border-color: #90EE90;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 /* Sidebar Styles */
 .sidebar .card-header {
@@ -90,4 +123,33 @@
 
 .sidebar .card-body {
     padding: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+footer .social-media img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+footer .social-media img:hover {
+    opacity: 1;
+}
+
+footer .footer-links a {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #4CAF50;
+    text-decoration: none;
 }
