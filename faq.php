@@ -46,9 +46,9 @@
                             Ressourcen
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Anbau-Guide</a></li>
-                            <li><a class="dropdown-item" href="#">Rechtliches</a></li>
-                            <li><a class="dropdown-item" href="#">Downloads</a></li>
+                            <li><a class="dropdown-item" href="anbau-guide.php">Anbau-Guide</a></li>
+                            <li><a class="dropdown-item" href="rechtliches.php">Rechtliches</a></li>
+                            <li><a class="dropdown-item" href="downloads.php">Downloads</a></li>
                         </ul>
                     </li>
                 </ul>
