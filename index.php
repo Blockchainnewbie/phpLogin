@@ -141,6 +141,10 @@
             </div>
         </div>
     </div>
+            </div>
+            <?php require_once(__DIR__ . '/css/sidebar.php'); ?>
+        </div>
+    </div>
 
     <div class="footer-spacing"></div> <!-- Abstandshalter, um Platz zwischen dem Body und dem Footer zu schaffen -->
 
