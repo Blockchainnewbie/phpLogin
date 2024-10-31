@@ -26,9 +26,9 @@
                             Über Uns
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                            <li><a class="dropdown-item" href="#">Geschichte</a></li>
-                            <li><a class="dropdown-item" href="#">Team</a></li>
-                            <li><a class="dropdown-item" href="#">Standort</a></li>
+                            <li><a class="dropdown-item" href="geschichte.php">Geschichte</a></li>
+                            <li><a class="dropdown-item" href="team.php">Team</a></li>
+                            <li><a class="dropdown-item" href="standort.php">Standort</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
