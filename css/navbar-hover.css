@@ -77,3 +77,16 @@
     background-color: #f8f9fa;
     border-radius: 0.25rem;
 }
+
+.sidebar #contactForm .form-control {
+    font-size: 0.9rem;
+}
+
+.sidebar #contactForm textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.sidebar .card-body {
+    padding: 1rem;
+}

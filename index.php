@@ -113,35 +113,6 @@
             <a href="register.php">Registrieren</a> <!-- Link zur Registrierungsseite -->
             <a href="login.php">Anmelden</a> <!-- Link zur Login-Seite -->
         </div>
-    </div>
-
-    <!-- Kontaktformular -->
-    <div class="container mt-5 mb-5">
-        <h2 class="text-center mb-4">Kontaktiere uns</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form id="contactForm" method="post">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-Mail</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="betreff" class="form-label">Betreff</label>
-                        <input type="text" class="form-control" id="betreff" name="betreff" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="nachricht" class="form-label">Nachricht</label>
-                        <textarea class="form-control" id="nachricht" name="nachricht" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-success w-100">Nachricht senden</button>
-                </form>
-            </div>
-        </div>
-    </div>
             </div>
         </div>
     </div>
