@@ -112,6 +112,34 @@
         </div>
     </div>
 
+    <!-- Kontaktformular -->
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-4">Kontaktiere uns</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="betreff" class="form-label">Betreff</label>
+                        <input type="text" class="form-control" id="betreff" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nachricht" class="form-label">Nachricht</label>
+                        <textarea class="form-control" id="nachricht" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <div class="footer-spacing"></div> <!-- Abstandshalter, um Platz zwischen dem Body und dem Footer zu schaffen -->
 
     <?php require_once(__DIR__ . '/css/footer.php'); ?> <!-- Lädt den Footer der Seite, um eine einheitliche Fußzeile zu gewährleisten -->
