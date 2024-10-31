@@ -117,7 +117,7 @@
         <h2 class="text-center mb-4">Kontaktiere uns</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form>
+                <form id="contactForm" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
                         <input type="text" class="form-control" id="name" required>
@@ -151,6 +151,30 @@
             var myCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'), {
                 interval: 3000,
                 wrap: true
+            });
+
+            // Kontaktformular Handler
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                
+                fetch('process_contact.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Ihre Nachricht wurde erfolgreich gesendet!');
+                        document.getElementById('contactForm').reset();
+                    } else {
+                        alert('Es gab einen Fehler beim Senden der Nachricht: ' + (data.error || 'Unbekannter Fehler'));
+                    }
+                })
+                .catch(error => {
+                    alert('Es gab einen Fehler beim Senden der Nachricht: ' + error);
+                });
             });
         });
     </script>
