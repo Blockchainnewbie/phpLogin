@@ -34,3 +34,21 @@
     color: #006400 !important;
     transition: color 0.3s ease;
 }
+
+/* Kontaktformular Styles */
+.form-control:focus {
+    border-color: #90EE90;
+    box-shadow: 0 0 0 0.2rem rgba(144, 238, 144, 0.25);
+}
+
+.btn-success {
+    background-color: #90EE90;
+    border-color: #90EE90;
+    color: #333;
+}
+
+.btn-success:hover {
+    background-color: #006400;
+    border-color: #006400;
+    color: white;
+}
