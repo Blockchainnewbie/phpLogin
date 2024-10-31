@@ -57,6 +57,8 @@
     </nav>
 
     <div class="container">
+        <div class="row">
+            <div class="col-md-9">
         <!-- Bootstrap Carousel -->
         <div id="imageCarousel" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-indicators">

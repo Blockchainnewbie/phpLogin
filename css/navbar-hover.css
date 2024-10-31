@@ -52,3 +52,23 @@
     border-color: #006400;
     color: white;
 }
+/* Sidebar Styles */
+.sidebar .card-header {
+    background-color: #90EE90 !important;
+    color: #333 !important;
+    border: none;
+}
+
+.sidebar .card {
+    border-color: #90EE90;
+    margin-bottom: 1rem;
+}
+
+.sidebar .ad-space {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+}
